@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>BT3</title>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="menu__container">
+                <img src="./assets/icon/logo.svg" alt="Logo" class="menu__logo">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <img class="menu__item-icon" src="./assets/icon/inbox.svg" alt="Inbox">
+                        <p class="menu__item-title">Inbox</p>
+                    </li>
+                    <li class="menu__item">
+                        <img class="menu__item-icon" src="./assets/icon/contact.svg" alt="Contact">
+                        <p class="menu__item-title">Contact</p>
+                    </li>
+                    <li class="menu__item">
+                        <img class="menu__item-icon" src="./assets/icon/content.svg" alt="Content">
+                        <p class="menu__item-title">Content</p>
+                    </li>
+                    <li class="menu__item">
+                        <img class="menu__item-icon" src="./assets/icon/report.svg" alt="Reports">
+                        <p class="menu__item-title">Reports</p>
+                    </li>
+                    <li class="menu__item">
+                        <img class="menu__item-icon" src="./assets/icon/growth.svg" alt="Growth">
+                        <p class="menu__item-title">Growth</p>
+                    </li>
+                    <li class="menu__item">
+                        <img class="menu__item-icon" src="./assets/icon/setting.svg" alt="Settings">
+                        <p class="menu__item-title">Settings</p>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu__user">
+                <li class="menu__user-item">
+                    <img src="./assets/icon/bell.svg" alt="Notifications" class="menu__user-item-icon">
+                    <p class="menu__user-item-title">Notifications</p>
+                </li>
+                <li class="menu__user-item">
+                    <img src="./assets/icon/avatar.svg" alt="Avatar" class="menu__user-item-avatar">
+                </li>
+            </ul>
+        </div>
+        <div class="submenu">
+            <h1 class="submenu__title">SETTINGS</h1>
+            <div class="submenu__compartment"></div>
+            <ul class="submenu__list">
+                <li class="submenu__item">
+                    <a href="#" class="submenu__item-link">Canned Responses</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="#" class="submenu__item-link">Chat widget</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="#" class="submenu__item-link">Teammate management</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="#" class="submenu__item-link">Email configuration</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <button class="content__btn-left"><img src="./assets/icon/angle_left.svg" alt="Left"></button>
+            <div class="content__header">
+                <div class="content__header-title">Create canned response</div>
+                <div class="content__btn">
+                    <button class="content__btn-canned" onclick="window.location.href='../index.html'">Cancel</button>
+                    <button class="content__btn-create">Create</button>
+                </div>
+            </div>
+            <form action="" class="content__form">
+                <div class="content__form-item">
+                    <p class="content__form-title">Category</p>
+                    <select name="" id="" class="content__form-input">
+                        <option value="">No category</option>
+                    </select>
+                </div>
+                <div class="content__form-item">
+                    <p class="content__form-title">Shortcut</p>
+                    <input type="text" placeholder="Enter shortcut" class="content__form-input">
+                </div>
+                <div class="content__form-item">
+                    <p class="content__form-title">Content</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write something..." class="content__form-input content__form-input-textbox"></textarea>
+                </div>
+                <div class="content__form-item">
+                    <p class="content__form-title">Tag</p>
+                    <button class="content__form-add"><img src="./assets/icon/plus_black.svg" alt="Plus" class="content__form-icon">Add</button>
+                </div>
+                <div class="content__form-item">
+                    <p class="content__form-title">Tag</p>
+                    <label for="no_action" class="content__form-label">
+                        <input type="radio" id="no_action" name="action" value="No action">
+                        No action
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="reassign_teammate" class="content__form-label">
+                        <input type="radio" id="reassign_teammate" name="action" value="Reassign teammate">
+                        Reassign teammate
+
+                    </label>
+                    <label for="resolve_conversation" class="content__form-label">
+                        <input type="radio" id="resolve_conversation" name="action" value="Resolve conversation">
+                        Resolve conversation
+                    </label>
+                </div>
+                <div class="content__form-item">
+                    <p class="content__form-title">Available for</p>
+                    <label for="everyone" class="content__form-label">
+                        <input type="radio" id="everyone" name="available" value="Everyone">
+                        Everyone
+                    </label>
+                    <label for="specific_team" class="content__form-label">
+                        <input type="radio" id="specific_team" name="available" value="Specific team(s)">
+                        Specific team(s)
+                    </label>
+                    <label for="myself_only" class="content__form-label">
+                        <input type="radio" id="myself_only" name="available" value="Myself only">
+                        Myself only
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
